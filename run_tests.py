@@ -83,7 +83,7 @@ if __name__ == "__main__":
         execute_stack_tests()
         runned = True
     
-    if input_option == "5":
+    if input_option.startswith("5"):
         execute_sorting_tests()
         runned = True
 
