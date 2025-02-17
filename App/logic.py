@@ -31,7 +31,7 @@ from DataStructures.List import array_list as al
 from DataStructures.List import single_linked_list as lt
 # TODO Importar las librerías correspondientes para el manejo de pilas y colas
 
-data_dir = os.path.dirname(os.path.realpath('__file__')) + '/Data/'
+data_dir = os.path.dirname(os.path.realpath('__file__')) + '/Data/GoodReads'
 
 sort_algorithm = None
 data_structure = None
@@ -311,7 +311,7 @@ def sort_books(catalog):
         #TODO: completar para quicksort recuerde eliminar pass
     end_time = get_time()
     delta = delta_time(start_time, end_time)
-    return delta
+    return sorted_books, delta 
 
     
 #  -----------------------------------------------   

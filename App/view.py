@@ -39,7 +39,7 @@ operación solicitada
 """
 
 
-def new_logic():
+def new_logic(data_structure):
     """
     Se crea una instancia del controlador
     """
@@ -93,8 +93,8 @@ def load_data(control):
     """
     Solicita al controlador que cargue los datos en el modelo
     """
-    books, authors, tags, book_tags, books_to_read = logic.load_data(control)
-    return books, authors, tags, book_tags, books_to_read
+    books, authors, tags, book_tags= logic.load_data(control)
+    return books, authors, tags, book_tags
 
 def print_author_data(author):
     """
@@ -136,13 +136,14 @@ def print_sort_results(sort_books, sample=3):
     Se espera que la función imprima la información de 'sample' libros usando la función
     print_book_info(). 
     """
-
     # Recorrer los elementos de la estructura de datos 'sort_books'.
-    for book_pos in range(0, data_structure.size(sort_books)):
+    sorted_books=  sort_books[0]
+
+    for book_pos in range(0, data_structure.size(sorted_books)):
         # Si todavía hay libros que imprimir en la muestra.
         if sample > 0:
             # Obtener el libro en la posición actual.
-            book = data_structure.get_element(sort_books, book_pos)
+            book = data_structure.get_element(sorted_books, book_pos)
             # TODO: Completar la lógica para imprimir la información del libro usando print_book_info().
             # Disminuir el contador de la muestra.
             sample -= 1
@@ -224,7 +225,7 @@ def main():
             print("Ordenando los libros por rating ...")
             result = logic.sort_books(control)
             #TODO:imprimir el resultado del ordenamiento (print_sort_results)
-            print("Tiempo de ejecución:", f"{result:.3f}", "[ms]")
+            print("Tiempo de ejecución:", f"{result[1]:.3f}", "[ms]")
 
         elif int(inputs[0]) == 8:
             # confirmar salida del programa
