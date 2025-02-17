@@ -45,17 +45,18 @@ def execute_sorting_tests(input_option="5"):
     if input_option.lower() == "5.a" or input_option == "5":
         pass  
     if input_option.lower() == "5.b" or input_option == "5":
-        tests_names.append("test_recursive_sort_array_list", "test_recursive_sort_single_linked_list")
+        tests_names.append("test_recursive_sort_array_list")
+        tests_names.append("test_recursive_sort_single_linked_list")
     for test_name in tests_names:
         execute_pytest_test(test_name)
 
 
-def execute_queue_tests(input_option="3"):
+def execute_queue_tests():
     """Ejecuta las pruebas de la cola (queue)"""
     execute_pytest_test("test_queue")
 
 
-def execute_stack_tests(input_option="4"):
+def execute_stack_tests():
     """Ejecuta las pruebas de la pila (stack)"""
     execute_pytest_test("test_stack")
 
