@@ -3,24 +3,31 @@ import os
 
 def execute_pytest_test(test_name):
     os.system(f"pytest -v -k \"{test_name}\"")
+    os.system(f"py -m pytest -v -k \"{test_name}\"")
+    os.system(f"python -m pytest -v -k \"{test_name}\"")
+    os.system(f"python3 -m pytest -v -k \"{test_name}\"")
 
 
 def print_test_options():
     print(" Bienvenido a las pruebas de EDA ".center(80, "="))
     print("1. Todas las estructuras")
     print("2. Listas")
-    print("2.A Lista de arreglos")
-    print("2.B Lista encadenadas")
+    print("     2.A Lista de arreglos")
+    print("     2.B Lista encadenadas")
     print("3. Colas (Queues)")
     print("4. Pilas (Stacks)")
+    print("5. Métodos de Ordenamiento")
+    print("     5.A Ordenamientos Iterativos")
+    print("     5.B Ordenamientos Recursivos")
     print("0. Salir")
 
 
-def execute_all_tests():
+def execute_all_tests(input_option="1"):
     """Ejecuta todas las pruebas disponibles"""
     execute_list_tests()
     execute_queue_tests()
     execute_stack_tests()
+    execute_sorting_tests()
 
 
 def execute_list_tests(input_option="2"):
@@ -33,13 +40,22 @@ def execute_list_tests(input_option="2"):
     for test_name in tests_names:
         execute_pytest_test(test_name)
 
+def execute_sorting_tests(input_option="5"):
+    tests_names = []
+    if input_option.lower() == "5.a" or input_option == "5":
+        pass  
+    if input_option.lower() == "5.b" or input_option == "5":
+        tests_names.append("test_recursive_sort_array_list", "test_recursive_sort_single_linked_list")
+    for test_name in tests_names:
+        execute_pytest_test(test_name)
 
-def execute_queue_tests():
+
+def execute_queue_tests(input_option="3"):
     """Ejecuta las pruebas de la cola (queue)"""
     execute_pytest_test("test_queue")
 
 
-def execute_stack_tests():
+def execute_stack_tests(input_option="4"):
     """Ejecuta las pruebas de la pila (stack)"""
     execute_pytest_test("test_stack")
 
@@ -65,6 +81,10 @@ if __name__ == "__main__":
 
     if input_option == "4":
         execute_stack_tests()
+        runned = True
+    
+    if input_option == "5":
+        execute_sorting_tests()
         runned = True
 
     if input_option == "0":
