@@ -174,14 +174,31 @@ def select_sort_algorithm(algo_opt):
     algo_msg = None
 
     # selecciona el algoritmo de ordenamiento
+
     # opcion 1: Merge Sort
-    if algo_opt == 1:
-        sort_algorithm = 1 
-        algo_msg = "Seleccionó la configuración - Merge Sort"
+    #TODO: completar la opcion de Merge Sort
 
     # opcion 2: Quick Sort
     #TODO: completar la opcion de Quick Sort
-    
+
+    #opcion 3: Selection Sort
+    if algo_opt == 3:
+        sort_algorithm = 3 
+        algo_msg = "Seleccionó la configuración - Selection Sort"
+
+    #opcion 4: Insertion Sort
+    elif algo_opt == 4:
+        sort_algorithm = 4 
+        algo_msg = "Seleccionó la configuración - Insertion Sort"
+
+    #opcion 5: Shell Sort
+    elif algo_opt == 5:    
+        sort_algorithm = 5 
+        algo_msg = "Seleccionó la configuración - Shell Sort"
+
+    else:
+        algo_msg = "No seleccionó una configuración válida"
+
     # respuesta final: algoritmo de ordenamiento y texto de configuracion
     return sort_algorithm, algo_msg
 
@@ -304,14 +321,24 @@ def sort_books(catalog):
     
     sorted_books = catalog["book_sublist"]
     start_time = get_time()
-    if sort_algorithm == 1:
-        data_structure.merge_sort(sorted_books, eval_ratings)
-    else:
-        pass
-        #TODO: completar para quicksort recuerde eliminar pass
+
+    #TODO: completar las opciones para quicksort y mergesort.
+    
+    if sort_algorithm == 3:
+        sorted_books_s = data_structure.selection_sort(sorted_books, eval_ratings)
+       
+    elif sort_algorithm == 4:
+        sorted_books_s = data_structure.insertion_sort(sorted_books, eval_ratings)
+    
+    elif sort_algorithm == 5:
+        sorted_books_s = data_structure.shell_sort(sorted_books, eval_ratings)
+    
     end_time = get_time()
     delta = delta_time(start_time, end_time)
-    return sorted_books, delta 
+
+
+
+    return sorted_books_s, delta 
 
     
 #  -----------------------------------------------   

@@ -158,6 +158,9 @@ data_str="""Seleccione el algoritmo de estructura de datos:
 algo_str = """Seleccione el algoritmo de ordenamiento recursivo:
 1. Merge Sort
 2. Quick Sort
+3. Selection Sort
+4. insertion Sort
+5. shell Sort
 """
                  
 exit_opt_lt = ("s", "S", "1", True, "true", "True", "si", "Si", "SI")

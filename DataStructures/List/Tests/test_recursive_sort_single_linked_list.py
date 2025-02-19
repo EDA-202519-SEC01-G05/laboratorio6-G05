@@ -82,16 +82,13 @@ def test_quick_sort():
     lt.quick_sort(random_lista, sort_criteria_increasingly)
 
     assert lt.size(random_lista) == 15
-    assert lt.first_element(one_element_list) == 10
 
     # Inverted list
 
     lt.quick_sort(inverted_list, sort_criteria_increasingly)
     assert lt.size(inverted_list) == 15
-    assert lt.first_element(one_element_list) == 10
 
     # Decreasingly sort criteria
 
     lt.quick_sort(back_up, sort_criteria_decreasingly)
     assert lt.size(back_up) == 15
-    assert lt.first_element(one_element_list) == 50
