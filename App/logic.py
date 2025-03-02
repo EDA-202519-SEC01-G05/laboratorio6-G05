@@ -22,6 +22,7 @@
  * Contribuciones
  *
  * Dario Correal
+ * Lina Ojeda
  """
 
 import csv
@@ -110,7 +111,7 @@ def load_books_tags(catalog):
     """
     Carga la información que asocia tags con libros.
     """
-    bookstagsfile = data_dir + None #TODO: completar la ruta del archivo de BOOKS_TAGS 
+    bookstagsfile = data_dir + None #TODO: completar la ruta del archivo
     input_file = csv.DictReader(open(bookstagsfile, encoding='utf-8'))
     for booktag in input_file:
         add_book_tag(catalog, booktag)

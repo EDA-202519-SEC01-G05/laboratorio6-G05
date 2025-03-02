@@ -26,53 +26,84 @@ def sort_criteria_increasingly(element1, element2):
         is_sorted = True
     return is_sorted
 
+@handle_not_implemented    
+def test_default_sort_criteria():
+    assert lt.default_sort_criteria(1, 2) == True 
+    assert lt.default_sort_criteria(2, 1) == False 
+
 @handle_not_implemented
-def test_merge_sort():
+def test_selection_sort():
+
     empty_list, one_element_list, random_lista, inverted_list = setup_tests()
 
     # Empty list
 
-    lt.merge_sort(empty_list, sort_criteria_increasingly)
+    lt.selection_sort(empty_list, sort_criteria_increasingly)
     assert lt.size(empty_list) == 0
 
     # One element list
 
-    lt.merge_sort(one_element_list, sort_criteria_increasingly)
+    lt.selection_sort(one_element_list, sort_criteria_increasingly)
     assert lt.size(one_element_list) == 1
 
     # Random list
 
-    lt.merge_sort(random_lista, sort_criteria_increasingly)
+    lt.selection_sort(random_lista, sort_criteria_increasingly)
     assert lt.size(random_lista) == 15
 
     # Inverted list
 
-    lt.merge_sort(inverted_list, sort_criteria_increasingly)
+    lt.selection_sort(inverted_list, sort_criteria_increasingly)
+    assert lt.size(inverted_list) == 15
+
+@handle_not_implemented
+def test_insertion_sort():
+
+    empty_list, one_element_list, random_lista, inverted_list = setup_tests()
+
+    # Empty list
+
+    lt.insertion_sort(empty_list, sort_criteria_increasingly)
+    assert lt.size(empty_list) == 0
+
+    # One element list
+
+    lt.insertion_sort(one_element_list, sort_criteria_increasingly)
+    assert lt.size(one_element_list) == 1
+
+    # Random list
+
+    lt.insertion_sort(random_lista, sort_criteria_increasingly)
+    assert lt.size(random_lista) == 15
+
+    # Inverted list
+
+    lt.insertion_sort(inverted_list, sort_criteria_increasingly)
     assert lt.size(inverted_list) == 15
 
 
 @handle_not_implemented
-def test_quick_sort():
+def test_shell_sort():
     empty_list, one_element_list, random_lista, inverted_list = setup_tests()
-    
+
     # Empty list
 
-    lt.quick_sort(empty_list, sort_criteria_increasingly)
+    lt.shell_sort(empty_list, sort_criteria_increasingly)
     assert lt.size(empty_list) == 0
 
     # One element list
 
-    lt.quick_sort(one_element_list, sort_criteria_increasingly)
+    lt.shell_sort(one_element_list, sort_criteria_increasingly)
     assert lt.size(one_element_list) == 1
 
     # Random list
 
-    lt.quick_sort(random_lista, sort_criteria_increasingly)
-
+    lt.shell_sort(random_lista, sort_criteria_increasingly)
     assert lt.size(random_lista) == 15
 
     # Inverted list
 
-    lt.quick_sort(inverted_list, sort_criteria_increasingly)
+    lt.shell_sort(inverted_list, sort_criteria_increasingly)
     assert lt.size(inverted_list) == 15
 
+ 

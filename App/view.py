@@ -22,6 +22,7 @@
  * Contribuciones
  *
  * Dario Correal
+ * Lina Ojeda
  """
 
 import sys

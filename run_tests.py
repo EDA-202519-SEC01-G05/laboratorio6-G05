@@ -22,7 +22,7 @@ def print_test_options():
     print("0. Salir")
 
 
-def execute_all_tests(input_option="1"):
+def execute_all_tests():
     """Ejecuta todas las pruebas disponibles"""
     execute_list_tests()
     execute_queue_tests()
@@ -43,7 +43,8 @@ def execute_list_tests(input_option="2"):
 def execute_sorting_tests(input_option="5"):
     tests_names = []
     if input_option.lower() == "5.a" or input_option == "5":
-        pass  
+        tests_names.append("test_iterative_sort_array_list")
+        tests_names.append("test_iterative_sort_single_linked_list")
     if input_option.lower() == "5.b" or input_option == "5":
         tests_names.append("test_recursive_sort_array_list")
         tests_names.append("test_recursive_sort_single_linked_list")
