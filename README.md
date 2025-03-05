@@ -1,5 +1,11 @@
 # Laboratorio 6
 
+[![Contributors][laboratorio-6-contributors-shield]][laboratorio-6-contributors-url]
+[![Forks][laboratorio-6-forks-shield]][laboratorio-6-forks-url]
+[![Stargazers][laboratorio-6-stars-shield]][laboratorio-6-stars-url]
+[![Issues][laboratorio-6-issues-shield]][laboratorio-6-issues-url]
+[![License][laboratorio-6-license-shield]][laboratorio-6-license-url]
+
 Este es el repositorio para el sexto laboratorio. Su objetivo es enseñar a los estudiantes cómo usar ordenamientos recursivos, cómo configurarlos sobre sus diferentes estructuras de datos y cómo integrarlos en la vista y lógica del curso.
 
 Este repositorio forma parte del marco docente de estructura de datos y algoritmos (#EDA) de la Universidad de los Andes. El repositorio fue desarrollado por profesores y personal de la facultad en Departamento de Ingenieria de Sistemas y Computación (#DISC).
@@ -53,7 +59,7 @@ Para usar esta plantilla, debe seguir los pasos a continuación:
 
 - Lea las instrucciones oficiales de laboratorio publicadas en el sitio oficial del curso en [BrightSpace][BrightSpace-url].
 - Distribuir las tareas de laboratorio entre los miembros del grupo.
-- Descargue el conjunto de datos oficial del laboratorio desde el sitio oficial del curso en [BrightSpace] [BrightSpace-url].
+- Descargue el conjunto de datos oficial del laboratorio desde el sitio oficial del curso en [BrightSpace][BrightSpace-url].
 - Descomprima y cargue el conjunto de datos en la aplicación en la carpeta [Data](./Data).
 - Implemente las funciones que faltan de acuerdo con las instrucciones de laboratorio en la carpeta [App](./App).
 - Complete el informe de laboratorio, registre sus pruebas y análisis en los documentos en la carpeta [Docs](./Docs) de acuerdo con las instrucciones (El informe **DEBE SER** en formato PDF).
@@ -106,10 +112,14 @@ Este programa se distribuye con la esperanza de que sea útil, pero SIN NINGUNA 
 
 ## Autores y Reconocimiento
 
-FALTA
+- [Dario Correal][dariocorreal-url] es el autor original y desarrollador principal de la librería.
+- [Santiago Arteaga][phillipus85-url] es colaborador y administrador de repositorios.
+- [Luis Florez][le99-url] es colaborador y desarrolló los ejemplos y tutoriales para la librería.
+- [Lina Ojeda][lojedaa-url] es colaborador y desarrolló la última versión de la actividad.
 
-[Volver al inicio](#laboratorio-4)
+[Volver al inicio](#laboratorio-6)
 
+[BrightSpace-url]: https://bloqueneon.uniandes.edu.co/d2l/home
 [data-struc-url]: https://isis1225devs.github.io/ISIS1225-Structure-Documentation/
 [uniandes-url]: https://cursos.virtual.uniandes.edu.co/isis1225/
 [organization-url]: https://github.com/ISIS1225DEVS/
@@ -118,3 +128,20 @@ FALTA
 [bugs-url]: https://github.com/ISIS1225DEVS/ISIS1225-Lib/issues
 [issues-url]: https://github.com/ISIS1225DEVS/ISIS1225-Lib/issues
 [gnu-url]: http://www.gnu.org/licenses/
+[dariocorreal-url]: https://github.com/dariocorreal
+[phillipus85-url]: https://github.com/phillipus85
+[le99-url]: https://github.com/le99
+[lojedaa-url]: https://github.com/lojedaa
+[laboratorio-6-contributors-shield]: https://img.shields.io/github/contributors/ISIS1225DEVS/ISIS1225-Laboratorio-6.svg?style=for-the-badge
+[laboratorio-6-contributors-url]: https://github.com/ISIS1225DEVS/ISIS1225-Laboratorio-6/graphs/contributors
+[laboratorio-6-forks-shield]: https://img.shields.io/github/forks/ISIS1225DEVS/ISIS1225-Laboratorio-6.svg?style=for-the-badge
+[laboratorio-6-forks-url]: https://github.com/ISIS1225DEVS/ISIS1225-Laboratorio-6/network/members
+[laboratorio-6-stars-shield]: https://img.shields.io/github/stars/ISIS1225DEVS/ISIS1225-Laboratorio-6.svg?style=for-the-badge
+[laboratorio-6-stars-url]: https://github.com/ISIS1225DEVS/ISIS1225-Laboratorio-6/stargazers
+[laboratorio-6-issues-shield]: https://img.shields.io/github/issues/ISIS1225DEVS/ISIS1225-Laboratorio-6.svg?style=for-the-badge
+[laboratorio-6-issues-url]: https://github.com/ISIS1225DEVS/ISIS1225-Laboratorio-6/issues
+[laboratorio-6-license-shield]: https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge
+[laboratorio-6-license-url]: https://github.com/ISIS1225DEVS/ISIS1225-Laboratorio-6/blob/master/LICENSE
+[laboratorio-6-bugs-url]: https://github.com/ISIS1225DEVS/ISIS1225-Laboratorio-6/issues
+[laboratorio-6-issues-url]: https://github.com/ISIS1225DEVS/ISIS1225-Laboratorio-6/issues
+[contributors-shield]: https://img.shields.io/github/contributors/ISIS1225DEVS/ISIS1225-Lib.svg?style=for-the-badge
